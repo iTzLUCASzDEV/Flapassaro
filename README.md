@@ -1,8 +1,10 @@
 # Flapassaro
-Lançado dia 16 de Outubro de 2021
+#Lançado dia 16 de Outubro de 2021
 
 Versão 1.1
+
 Dia 18 de Outubro de 2021
+
 
 1. O jogo estava muito difícil, então diminui a dificuldade em 30%, tornando o espaço entre os canos maior e o pulo do pássaro menor, sendo assim mais fácil de passar pelos canos e de controlar o pássaro. 
 
@@ -11,7 +13,9 @@ Dia 18 de Outubro de 2021
 3. Mudança não muito significativa, a asa do pássaro bate aproximadamente 3% mais rápido agora.
 
 Versão 1.2
+
 Dia 25 de Outubro de 2021
+
 
 1. Foi implementada uma Base de Dados, agora mesmo após recarregar ou fechar a página do jogo o seu Highscore continua o mesmo.
 
