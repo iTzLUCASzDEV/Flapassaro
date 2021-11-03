@@ -29,3 +29,5 @@ Dia 3 de Novembro de 2021
 
 
 1. O jogo agora possui disponibilidade total para mobile, ocupando a tela inteira, sendo assim melhor de jogar.
+
+2. Organização de pastas e etc.
