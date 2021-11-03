@@ -22,3 +22,10 @@ Dia 25 de Outubro de 2021
 2. Novos Sprites de medalhas foram adicionadas.
 
 3. Agora no menu inicial, aparece o seu Highscore e a sua melhor medalha alcançada. 
+
+Versão 1.3
+
+Dia 3 de Novembro de 2021
+
+
+1. O jogo agora possui disponibilidade total para mobile, ocupando a tela inteira, sendo assim melhor de jogar.
