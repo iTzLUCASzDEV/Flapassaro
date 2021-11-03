@@ -1,57 +1,64 @@
 const canvas = document.querySelector('canvas');
 const contexto = canvas.getContext('2d');
 
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+  canvas.style.width = '100vw'
+  canvas.style.height = '100vh'
+  canvas.style.border = 'transparent'
+  document.querySelector('body').style.background = '#63b623'
+}
+
 const bird_image = new Image()
-bird_image.src = './sprites4.png'
+bird_image.src = './Sprites/sprites4.png'
 
 const bird_image2 = new Image()
-bird_image2.src = './sprites5.png'
+bird_image2.src = './Sprites/sprites5.png'
 
 const bird_image3 = new Image()
-bird_image3.src = './sprites6.png'
+bird_image3.src = './Sprites/sprites6.png'
 
 const fundo_image = new Image()
-fundo_image.src = './sprites2.png'
+fundo_image.src = './Sprites/sprites2.png'
 
 const chao_image = new Image()
-chao_image.src = './sprites3.png'
+chao_image.src = './Sprites/sprites3.png'
 
 const cano1_image = new Image()
-cano1_image.src = './sprites7.png'
+cano1_image.src = './Sprites/sprites7.png'
 
 const cano2_image = new Image()
-cano2_image.src = './sprites8.png'
+cano2_image.src = './Sprites/sprites8.png'
 
 const inicio_image = new Image()
-inicio_image.src = './inicio.png'
+inicio_image.src = './Sprites/inicio.png'
 
 const gameover_image = new Image()
-gameover_image.src = './sprites9.png'
+gameover_image.src = './Sprites/sprites9.png'
 
 const medal_image = new Image()
-medal_image.src = './sprites10.png'
+medal_image.src = './Sprites/sprites10.png'
 
 const medal_image1 = new Image()
-medal_image1.src = './sprites12.png'
+medal_image1.src = './Sprites/sprites12.png'
 
 const medal_image2 = new Image()
-medal_image2.src = './sprites131.png'
+medal_image2.src = './Sprites/sprites131.png'
 
 const medal_image3 = new Image()
-medal_image3.src = './sprites14.png'
+medal_image3.src = './Sprites/sprites14.png'
 
 
 const musica_jogo = new Audio()
-musica_jogo.src = './Heatwave_DNB_09-10-2021_11-52.mp3'
+musica_jogo.src = './Sounds/Heatwave_DNB_09-10-2021_11-52.mp3'
 musica_jogo.volume = '0.1'
 musica_jogo.loop = 'loop'
 
 const musica_inicio = new Audio()
-musica_inicio.src = './Música sem título.mp3'
+musica_inicio.src = './Sounds/Música sem título.mp3'
 musica_inicio.volume = '0.01'
 
 const som_morte = new Audio()
-som_morte.src = './som_morte.mp3'
+som_morte.src = './Sounds/som_morte.mp3'
 
 function fazColisao(Bird, chao) {
   const BirdY = Bird.spriteY + 17;
@@ -103,7 +110,7 @@ function cria_bird() {
     },
     desenha() {
       bird.attFrame()
-      bird_image.src = `./sprites${bird.sprite_bird}.png`
+      bird_image.src = `./Sprites/sprites${bird.sprite_bird}.png`
       contexto.drawImage(bird_image, bird.spriteX, bird.spriteY)
     }
   }
@@ -211,7 +218,7 @@ const my_name = {
     contexto.fillText('criado e desenvolvido por Lucas Yamada', canvas.width - canvas.width / 2, 420)
     contexto.font = '10px Arial'
     contexto.fillStyle = 'black'
-    contexto.fillText('v1.2', canvas.width - 20, canvas.height - 10)
+    contexto.fillText('v1.3', canvas.width - 20, canvas.height - 10)
     if (localStorage.getItem('score') >= 1 && localStorage.getItem('score') < 5) {
       contexto.drawImage(medal_image, 48, 0, 44, 44, 6, 430, 44, 44)
     }
