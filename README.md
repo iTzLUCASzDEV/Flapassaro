@@ -1,6 +1,10 @@
 # Flapassaro
 # Lançado dia 16 de Outubro de 2021
 
+
+Jogo dísponivel em: https://flapassaro.netlify.app/
+
+
 Versão 1.1
 
 Dia 18 de Outubro de 2021
